@@ -29,7 +29,7 @@ function NavBar() {
     <Navbar
       expand="lg"
       className={`fixed w-full top-0 z-[9999] transition-all duration-300 ${
-        scrolled ? "bg-[#121212] py-0" : "py-[18px]"
+        scrolled ? "!bg-[#040f2f] py-0" : "py-[18px]"
       }`}
     >
       <Container>
