@@ -45,13 +45,13 @@ function Banner() {
   };
 
   return (
-    <section className="banner top-0">
+    <section className="banner top-0 text-white">
       <Container>
         <Row>
           <Col xs={12} md={6} xl={7}>
             <span className=" border border-white  rounded-2 p-2 bg-custom-gradient " > Welcome To My Portfolio </span>
-            <h1 className="  mt-[1%] p-[2%]">Hi! I am Shikagin </h1> <h3 className="h-[1em]">{text} </h3>
-            <p className="">
+            <h1 className="ml-[-2%]  mt-[1%] p-[2%]">Hi! I am Shikagin </h1> <h3 className="h-[1em]">{text} </h3>
+            <p className=" ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -62,7 +62,7 @@ function Banner() {
             </p>
             <div className="connect">
               <button
-                className=" font-bold text-white hover:!text-black border rounded-[7%] border-white px-[30px] py-[14px] text-[16px] ml-[18px] relative bg-transparent transition-all duration-300 ease-in-out"
+                className="   font-bold text-white hover:!text-black border rounded-[7%] border-white px-[30px] py-[14px] text-[16px]  relative bg-transparent transition-all duration-300 ease-in-out"
                 onClick={() => console.log("contact me")}
               >
                 <span className="flex flex-row gap-2">

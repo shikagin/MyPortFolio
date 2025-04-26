@@ -33,8 +33,9 @@ body{
   overflow-x: hidden;
   position: relative;
   font-family: 'Centra', sans-serif !important;
-  color: #fff !important;
-  background-color: #00030a!important;
+  color: #ffffff  !important;
+  background:#27323f!important ;
+  
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -119,7 +120,7 @@ input:focus, textarea:focus, select:focus {
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
-    box-shadow: none;
+  box-shadow: none;
 }
 
 nav.navbar .navbar-toggler-icon {
@@ -170,7 +171,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 100px 0 260px 0;
-  background-image: url('./assets/img/bgBanner.png');
+  background-image: url('./assets/img/bgBanner.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -212,4 +213,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 5s linear infinite;
+}
+
+
+/************ skills Css ************/
+.skills {
+  padding: 0 0 50px 0;
+  position: relative;
 }
