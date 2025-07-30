@@ -8,7 +8,10 @@ import { useState, useEffect } from "react";
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Develloper", "web Designer", "UI/UX Designer"];
+  const toRotate = [
+    "Software And Information Systems Engineer",
+    "Web Develloper",
+  ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -45,25 +48,27 @@ function Banner() {
   };
 
   return (
-    <section className="banner top-0 text-white">
+    <section className="banner top-0 mt-5 text-white" id="home">
       <Container>
         <Row>
           <Col xs={12} md={6} xl={7}>
-            <span className=" border border-white  rounded-2 p-2 bg-custom-gradient " > Welcome To My Portfolio </span>
-            <h1 className="ml-[-2%]  mt-[1%] p-[2%]">Hi! I am Shikagin </h1> <h3 className="h-[1em]">{text} </h3>
-            <p className=" ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <span className=" border border-white  rounded-2 p-2 bg-custom-gradient ">
+              {" "}
+              Welcome To My Portfolio{" "}
+            </span>
+            <h1 className="ml-[-2%]  mt-[1%] p-[2%]">Hi! I am Rafika </h1>{" "}
+            <h3 className="h-[1em]">{text} </h3>
+            <p className="AboutMe ">
+              Hi! I’m Mekircha Rafika Houda, a software and information systems
+              engineering student who loves building things—whether it’s
+              websites, smart devices, or creative code experiments. I enjoy
+              working with C++, React, and Arduino, and I’m always exploring new
+              ways to turn ideas into real solutions. 
             </p>
             <div className="connect">
               <button
                 className="   font-bold text-white hover:!text-black border rounded-[7%] border-white px-[30px] py-[14px] text-[16px]  relative bg-transparent transition-all duration-300 ease-in-out"
-                onClick={() => console.log("contact me")}
+                onClick={() => {window.location.href = "#contact";}}
               >
                 <span className="flex flex-row gap-2">
                   Let's Connect <ArrowRightCircle size={25} />{" "}

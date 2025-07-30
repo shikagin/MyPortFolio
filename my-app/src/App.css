@@ -31,7 +31,7 @@ html{
 body{
   font-weight: 400;
   overflow-x: hidden;
-  position: relative;
+   position: relative; 
   font-family: 'Centra', sans-serif !important;
   color: #ffffff  !important;
   background:#27323f!important ;
@@ -68,7 +68,12 @@ button {
 input:focus, textarea:focus, select:focus {
   outline: none;
 }
-
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
 /************ Navbar Css ************/
 
 .social-icon a::before {
@@ -200,24 +205,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.082) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
 }
 
-@keyframes updown {
-  0% {
-      transform: translateY(-3px);
-  }
-  50% {
-      transform: translateY(3px);
-  }
-  100% {
-      transform: translateY(-3px);
-  }
-}
-.banner img {
-  animation: updown 5s linear infinite;
-}
+
 
 
 /************ skills Css ************/
 .skills {
+ 
   padding: 0 0 50px 0;
   position: relative;
 }
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+/************ Projects Css ************/
+.project {
+  padding: 80px 0;
+  position: relative;
+  background-color: black;
+}
+.project h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+.project p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+.nav-link#projects-tabs-tab-first {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+
+/************ GetInTouch Css ************/
