@@ -56,7 +56,6 @@ function Skills() {
           </div>
         </Carousel>
       </Container>
-      <img className="background-image-left pointer-events-none z-10" src={colorSharp} alt="Image" />
     </section>
   );
 }

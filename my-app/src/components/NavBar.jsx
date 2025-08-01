@@ -131,7 +131,7 @@ function NavBar() {
                 />
               </a>
               <a
-                href="https://www.facebook.com/RafikaOo/about"
+                href="https://github.com/shikagin"
                 target="_blank"
                 className="w-[2em] h-[2em]  bg-[rgba(217,217,217,0.1)] rounded-[50%] mr-6 content-center items-center leading-none border border-white group-hover"
               >

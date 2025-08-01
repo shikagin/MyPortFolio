@@ -24,7 +24,7 @@ function Footer() {
                 />
               </a>
               <a
-                href="https://www.facebook.com/RafikaOo/about" target="_blank"
+                href="https://github.com/shikagin" target="_blank"
                 className="w-[2em] h-[2em]  bg-[rgba(217,217,217,0.1)] rounded-[50%] mr-1 content-center items-center leading-none border border-white group-hover"
               >
                 <img
@@ -46,7 +46,7 @@ function Footer() {
             </div>
           </Col>
         </Row>
-        <p className="absulote  text-sm text-gray-400 " >  © 2024. All Rights Reserved</p>
+        <a href="mailto:rafikahouda2005@gmail.com" className="absulote  text-sm text-gray-400 " > rafikahouda2005@gmail.com</a>
       </Container>
     </section>
   );

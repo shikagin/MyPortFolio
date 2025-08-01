@@ -13,7 +13,7 @@ function App() {
    useEffect(() => {
     // Scroll to top on initial load
     window.scrollTo(0, 0);
-  }, []);
+   });
 
   return (
     <div className="App">
