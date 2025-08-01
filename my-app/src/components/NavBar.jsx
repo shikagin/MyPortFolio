@@ -18,23 +18,38 @@ function NavBar() {
         setScrolled(true);
       } else setScrolled(false);
 
-      const sections = ["home", "skills", "projects"];
-const scrollPosition = window.scrollY -50;
-for (let i = sections.length - 1; i >= 0; i--) {
-  const section = document.getElementById(sections[i]);
-  if (section && section.offsetTop <= scrollPosition) {
-    const newActiveLink=sections[i];
-    if(activeLink!= newActiveLink)
-    {
-      setActiveLink(newActiveLink);
-    }
-    
-    break;
-  }
-}
-    };
+      const scrollPosition = window.scrollY;
 
-    setActiveLink("home");
+      if (scrollPosition < 100) {
+        console.log("Im home");
+
+        setActiveLink("home");
+        try {
+          window.history.replaceState(null, "", `#home`);
+        } catch (error) {
+          console.warn("Cannot change URL hash:", error);
+        }
+        return;
+      }
+      const sections = ["skills", "projects", "contact"];
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i]);
+        if (section && section.offsetTop <= scrollPosition + 100) {
+          const newActiveLink = sections[i];
+
+          if (activeLink != newActiveLink) {
+            setActiveLink(newActiveLink);
+            try {
+              window.history.replaceState(null, "", `#${newActiveLink}`);
+            } catch (error) {
+              console.warn("Cannot change URL hash:", error);
+            }
+          }
+
+          break;
+        }
+      }
+    };
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
@@ -91,13 +106,22 @@ for (let i = sections.length - 1; i >= 0; i--) {
               Projects
             </Nav.Link>
 
-            
+            <Nav.Link
+              href="#contact"
+              className={`${
+                activeLink === "contact" ? "!opacity-100" : "opacity-75"
+              } text-white font-normal text-lg px-[5vw] tracking-[0.05em] hover:!opacity-100 transition-opacity duration-300`}
+              onClick={() => onUpdateActiveLink("contact")}
+            >
+              More
+            </Nav.Link>
           </Nav>
 
           <span className=" navbar-text flex-row flex  items-center">
             <div className=" social-icon flex-row  relative flex ml-14">
               <a
-                href="https://www.linkedin.com/in/mekircha-rafikahouda-b47882276" target="_blank"
+                href="https://www.linkedin.com/in/mekircha-rafikahouda-b47882276"
+                target="_blank"
                 className="  w-[2em] h-[2em] bg-[rgba(255,248,248,0.1)] rounded-[50%] content-center mr-6 items-center leading-none border border-white group-hover"
               >
                 <img
@@ -107,7 +131,8 @@ for (let i = sections.length - 1; i >= 0; i--) {
                 />
               </a>
               <a
-                href="https://www.facebook.com/RafikaOo/about" target="_blank"
+                href="https://www.facebook.com/RafikaOo/about"
+                target="_blank"
                 className="w-[2em] h-[2em]  bg-[rgba(217,217,217,0.1)] rounded-[50%] mr-6 content-center items-center leading-none border border-white group-hover"
               >
                 <img
@@ -117,8 +142,8 @@ for (let i = sections.length - 1; i >= 0; i--) {
                 />
               </a>
               <a
-                href="https://www.instagram.com/rafika_houda/" target="_blank"
-                
+                href="https://www.instagram.com/rafika_houda/"
+                target="_blank"
                 className=" w-[2em] h-[2em] bg-[rgba(217,217,217,0.1)] rounded-[50%] mr-6 content-center items-center leading-none border border-white group-hover"
               >
                 <img
