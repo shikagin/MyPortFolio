@@ -5,34 +5,33 @@ import colorSharp from "../assets/img/color-sharp.png";
 import emailjs from "@emailjs/browser";
 
 function GetInTouch() {
-
-  const form=useRef();
+  const form = useRef();
 
   const [messageSent, setMessageSent] = useState(false);
-  
+
   const handleSubmit = (event) => {
-      event.preventDefault();
-      
-      emailjs.sendForm(
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
         "service_sy1ar0h",
         "template_03co7ub",
         form.current,
         "xPd7KdvOLI71HGN_W"
       )
-      .then(
-        (result)=>{
-          console.log(result.text);
-          setMessageSent(true);
+      .then((result) => {
+        console.log(result.text);
+        setMessageSent(true);
 
-          form.current.reset();
-      });   
-      
+        form.current.reset();
+      });
   };
-  const handleChange =()=>{
-    if (messageSent){setMessageSent(false);}
+  const handleChange = () => {
+    if (messageSent) {
+      setMessageSent(false);
+    }
   };
-  
-  
+
   return (
     <section className="GetInTouch" id="contact">
       <Container>
@@ -92,7 +91,6 @@ function GetInTouch() {
                 </Col>
                 <Col>
                   <textarea
-
                     required
                     rows="6"
                     name="message"
@@ -112,7 +110,7 @@ function GetInTouch() {
                 <div className="text-green-600 mt-4 ">
                   Your message was sent successfully!
                 </div>
-              )  : null}
+              ) : null}
             </form>
           </Col>
         </Row>

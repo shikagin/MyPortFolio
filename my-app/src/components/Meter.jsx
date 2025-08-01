@@ -1,7 +1,7 @@
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-function Meter ({ percentage }){
+function Meter ({ percentage,text }){
 
     return(
 
@@ -10,7 +10,7 @@ function Meter ({ percentage }){
         <CircularProgressbar
           
           value={percentage}
-          text={`${percentage}%`}
+          text={text}
           styles={buildStyles({
             rotation: 0.25,
             strokeLinecap: "butt",
