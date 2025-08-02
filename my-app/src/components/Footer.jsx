@@ -5,14 +5,20 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 function Footer() {
   return (
-    <section className="moreInfo bg-black py-1">
+    <section className="moreInfo bg-black ">
       <Container>
         <Row>
           <Col className="">
-            <img src={logo} alt="" className="w-44 h-44 " />
+            <img src={logo} alt="" className="w-40 top-12 " />
+            <a
+              href="mailto:rafikahouda2005@gmail.com"
+              className="text-sm text-gray-400 "
+            >
+              rafikahouda2005@gmail.com
+            </a>
           </Col>
           <Col>
-            <div className=" social-icon flex-row top-16 left-96 relative flex ml-14 align-bottom">
+            <div className=" social-icon flex-row top-5 left-96 relative flex ml-14 align-bottom">
               <a
                 href="https://www.linkedin.com/in/mekircha-rafikahouda-b47882276"
                 target="_blank"
@@ -46,16 +52,12 @@ function Footer() {
                   className=" w-[60%] h-[60%] ml-[20%]"
                 />
               </a>
+               
             </div>
+           
           </Col>
+          
         </Row>
-        <a
-          href="mailto:rafikahouda2005@gmail.com"
-          className="absolute  text-sm text-gray-400 "
-        >
-          {" "}
-          rafikahouda2005@gmail.com
-        </a>
       </Container>
     </section>
   );

@@ -5,17 +5,17 @@ function Meter ({ percentage,text }){
 
     return(
 
-        <div className="item">
+        <div className="item w-48 h-48">
 
         <CircularProgressbar
           
           value={percentage}
           text={text}
+          strokeWidth={13}
           styles={buildStyles({
             rotation: 0.25,
-            strokeLinecap: "butt",
-            textSize: "18px",
-           
+            strokeLinecap: "round",
+            textSize: "12px",
             pathColor: "url(#gradient)",
             textColor: "#fff",
            

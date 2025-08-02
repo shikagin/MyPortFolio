@@ -8,35 +8,24 @@ import 'animate.css';
 
 const projects = [
   {
-    title: "Business Startup",
-    description: "Design & Development",
+    title: "Smart Home Automation App",
+    description: "Embedded Systems Development",
     imgUrl: projImg1,
+    gitUrl:"https://github.com/shikagin/Domov.git"
   },
   {
-    title: "Business Startup",
-    description: "Design & Development",
+    title: "Web Application for Managing Patient Records",
+    description: "Back-End Development",
     imgUrl: projImg2,
+    gitUrl:"https://github.com/shikagin/Igl_Project.git"
   },
   {
-    title: "Business Startup",
-    description: "Design & Development",
+    title: "Smart HR Platform",
+    description: "Front-End Development",
     imgUrl: projImg3,
+    gitUrl:"https://github.com/shikagin/Smart-HR-Platform.git"
   },
-  {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg1,
-  },
-  {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg2,
-  },
-  {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg3,
-  },
+ 
 ];
 
 function Projects() {
@@ -49,11 +38,7 @@ function Projects() {
               <div>
                 <h2>Projects</h2>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  A showcase of the ideas I've brought to life blending code, creativity, and purpose.
                 </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Tab.Content
