@@ -47,7 +47,13 @@ function GetInTouch() {
               className="flex px-4 bg-transparent"
               onSubmit={handleSubmit}
             >
-              <Row>
+               
+              <Row className="">
+                {messageSent === true ? (
+                <div className=" text-green-600 mt-4 ">
+                  Your message was sent successfully!
+                </div>
+               ) : null}
                 <Col>
                   <input
                     name="first_name"
@@ -55,7 +61,7 @@ function GetInTouch() {
                     type="text"
                     placeholder="First Name"
                     onChange={handleChange}
-                    className="bg-gray-400 bg-opacity-40 text-white placeholder-white text-opacity-100 border rounded-lg pl-1 py-2 my-2"
+                    className="e bg-gray-400 bg-opacity-40 text-white placeholder-white text-opacity-100 border rounded-lg pl-1 py-2 my-2"
                   />
                 </Col>
                 <Col>
@@ -65,7 +71,7 @@ function GetInTouch() {
                     type="text"
                     placeholder="Last Name"
                     onChange={handleChange}
-                    className="bg-gray-400 bg-opacity-40 text-white placeholder-white text-opacity-100 border rounded-lg pl-1 py-2 my-2"
+                    className=" bg-gray-400 bg-opacity-40 text-white placeholder-white text-opacity-100 border rounded-lg pl-1 py-2 my-2"
                   />
                 </Col>
                 <Col>
@@ -75,7 +81,7 @@ function GetInTouch() {
                     type="email"
                     placeholder="Email"
                     onChange={handleChange}
-                    className="bg-gray-400 bg-opacity-40 text-white placeholder-white text-opacity-100 border rounded-lg pl-1 py-2 my-2"
+                    className=" bg-gray-400 bg-opacity-40 text-white placeholder-white text-opacity-100 border rounded-lg pl-1 py-2 my-2"
                   />
                 </Col>
                 <Col>
@@ -86,7 +92,7 @@ function GetInTouch() {
                     placeholder="Phone NO."
                     onChange={handleChange}
                     pattern="^(00213|\+213|0)(5|6|7)[0-9]{8}$"
-                    className="bg-gray-400 bg-opacity-40 text-white placeholder-white text-opacity-100 border rounded-lg pl-1 py-2 my-2"
+                    className=" bg-gray-400 bg-opacity-40 text-white placeholder-white text-opacity-100 border rounded-lg pl-1 py-2 my-2"
                   />
                 </Col>
                 <Col>
@@ -96,21 +102,17 @@ function GetInTouch() {
                     name="message"
                     placeholder="Message"
                     onChange={handleChange}
-                    className="bg-gray-400 bg-opacity-40 text-white placeholder-white text-opacity-100 border rounded-lg h-32 w-full pl-1 my-2 align-top resize-none  "
+                    className=" bg-gray-400 bg-opacity-40 text-white placeholder-white text-opacity-100 border rounded-lg h-32 w-full pl-1 my-2 align-top resize-none  "
                   ></textarea>
                   <button
                     type="submit"
-                    className="bg-gray-200 h-11 w-20 text-[#27323f] font-bold rounded-md "
+                    className=" bg-gray-200 h-11 w-20 text-[#27323f] font-bold rounded-md "
                   >
                     Send
                   </button>
                 </Col>
               </Row>
-              {messageSent === true ? (
-                <div className="text-green-600 mt-4 ">
-                  Your message was sent successfully!
-                </div>
-              ) : null}
+             
             </form>
           </Col>
         </Row>
