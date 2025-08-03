@@ -20,6 +20,7 @@ function Footer() {
           <Col>
             <div className=" social-icon flex-row top-5 left-96 relative flex ml-14 align-bottom">
               <a
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/mekircha-rafikahouda-b47882276"
                 target="_blank"
                 className="  w-[2em] h-[2em] bg-[rgba(255,248,248,0.1)] rounded-[50%] content-center mr-1 items-center leading-none border border-white group-hover"
@@ -31,6 +32,7 @@ function Footer() {
                 />
               </a>
               <a
+                rel="noopener noreferrer"
                 href="https://github.com/shikagin"
                 target="_blank"
                 className="w-[2em] h-[2em]  bg-[rgba(217,217,217,0.1)] rounded-[50%] mr-1 content-center items-center leading-none border border-white group-hover"
@@ -42,6 +44,7 @@ function Footer() {
                 />
               </a>
               <a
+                rel="noopener noreferrer"
                 href="https://www.instagram.com/rafika_houda/"
                 target="_blank"
                 className=" w-[2em] h-[2em] bg-[rgba(217,217,217,0.1)] rounded-[50%] mr-1 content-center items-center leading-none border border-white group-hover"

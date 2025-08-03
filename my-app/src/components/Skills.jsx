@@ -1,13 +1,10 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { useEffect, useState } from "react";
-import colorSharp from "../assets/img/color-sharp.png";
 import Container from "react-bootstrap/Container";
 import "react-circular-progressbar/dist/styles.css";
 import Meter from "./Meter";
 
 function Skills() {
-  const [percentage, setPercentage] = useState(66);
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
