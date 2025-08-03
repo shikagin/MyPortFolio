@@ -8,16 +8,14 @@ import GetInTouch from "./components/GetInTouch";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
 
-
 function App() {
-   useEffect(() => {
+  useEffect(() => {
     // Scroll to top on initial load
     window.scrollTo(0, 0);
-   });
+  });
 
   return (
     <div className="App">
-      
       <NavBar />
       <Banner />
       <Skills />

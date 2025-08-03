@@ -52,11 +52,8 @@ function Footer() {
                   className=" w-[60%] h-[60%] ml-[20%]"
                 />
               </a>
-               
             </div>
-           
           </Col>
-          
         </Row>
       </Container>
     </section>

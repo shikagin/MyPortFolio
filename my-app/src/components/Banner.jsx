@@ -63,12 +63,14 @@ function Banner() {
               engineering student who loves building things—whether it’s
               websites, smart devices, or creative code experiments. I enjoy
               working with C++, React, and Arduino, and I’m always exploring new
-              ways to turn ideas into real solutions. 
+              ways to turn ideas into real solutions.
             </p>
             <div className="connect">
               <button
                 className="   font-bold text-white hover:!text-black border rounded-[7%] border-white px-[30px] py-[14px] text-[16px]  relative bg-transparent transition-all duration-300 ease-in-out"
-                onClick={() => {window.location.href = "#contact";}}
+                onClick={() => {
+                  window.location.href = "#contact";
+                }}
               >
                 <span className="flex flex-row gap-2">
                   Let's Connect <ArrowRightCircle size={25} />{" "}

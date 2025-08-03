@@ -27,38 +27,38 @@ function Skills() {
     },
   };
   return (
-    
     <section className="skills  mt-0 " id="skills">
-
       <Container className=" rounded-[80px] text-center  py-16 mt-[-90px]   bg-gradient-to-t from-[#354557] via-[#1f2731] to-[#0d1014]">
         <h1 className="text-[40px] font-bold"> My Skills </h1>
         <p className="text-[#B8B8B8] text-[18px] tracking-[0.8px] leading-[1.5em] my-[14px] mb-[75px]">
           Skills that power my projects
         </p>
 
-        <Carousel  className=" flex gap-1" responsive={responsive} infinite={true}>
-
+        <Carousel
+          className=" flex gap-1"
+          responsive={responsive}
+          infinite={true}
+        >
           <div className="item">
-              <Meter percentage={90} text={'React'}/>
+            <Meter percentage={90} text={"React"} />
           </div>
 
           <div className="item">
-            <Meter percentage={70} text={'C/C++'} />
+            <Meter percentage={70} text={"C/C++"} />
           </div>
 
           <div className="item">
-            <Meter percentage={30} text={'Django'}/>
+            <Meter percentage={30} text={"Django"} />
           </div>
 
           <div className="item">
-            <Meter percentage={80} text={'JS'} />
+            <Meter percentage={80} text={"JS"} />
           </div>
           <div className="item">
-            <Meter percentage={60} text={'Java'} />
+            <Meter percentage={60} text={"Java"} />
           </div>
         </Carousel>
       </Container>
-
     </section>
   );
 }
